@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from "@nestjs/typeorm";
+import { Categoria } from "../../categorias/entities/categoria.entity";
 
 
 @Injectable()
@@ -13,7 +14,7 @@ export class DevService implements TypeOrmOptionsFactory {
             username: 'root',
             password: 'root',
             database: 'db_farmacia',
-            entities: [],
+            entities: [Categoria],
             synchronize: true,
     };
   }
