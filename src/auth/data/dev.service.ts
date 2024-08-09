@@ -15,7 +15,7 @@ export class DevService implements TypeOrmOptionsFactory {
             port: 3306,
             username: 'root',
             password: 'root',
-            database: 'db_farmacia',
+            database: 'db_blogpessoal',
             entities: [Categoria, Produto, Usuario],
             synchronize: true,
     };
