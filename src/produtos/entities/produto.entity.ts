@@ -4,7 +4,7 @@ import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Categoria } from "../../categorias/entities/categoria.entity";
 import { ApiProperty } from "@nestjs/swagger";
 
-@Entity({ name: "tb_produtos" })
+@Entity({ name: "db_farmacia_tb_produtos" })
 export class Produto {
     @ApiProperty()
     @PrimaryGeneratedColumn()
